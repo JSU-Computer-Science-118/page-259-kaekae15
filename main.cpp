@@ -9,16 +9,6 @@ using namespace std;
 
 int main(){
     double a,b,c,discriminant;
-
-    cout << "enter a: "; 
-    cin >> a;
-
-    cout << "enter b: ";
-    cin >> b;
-
-    cout << "enter c: ";
-    cin >> c;
-
     discriminant = pow(b,2.0)-4*a*c;
 
     if (discriminant==0){
