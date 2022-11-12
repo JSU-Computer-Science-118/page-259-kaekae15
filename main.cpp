@@ -16,10 +16,10 @@ int main(){
         cout << "- First root " << (-b + pow(discriminant, 1.0/2.0))/(2.0*a) << endl;
         cout << "- Second root " << (-b-pow(discriminant,1.0/2.0))/(2.0*a) <<endl;
     }
-    else if (discriminant < 0);{
+    if (discriminant < 0);{
         cout << "Complex roots" << endl;
     }
-    else if (discriminant==0);{
+    if (discriminant==0);{
         cout << "The single repeated root is " << -b/(2.0*a) << endl; 
     }
     return 0;
