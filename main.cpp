@@ -22,15 +22,14 @@ int main(){
     discriminant = pow(b,2.0)-4*a*c;
 
     if (discriminant==0){
-        cout << "single (repeated) root" << endl; 
-        cout << "x= " << -b/(2.0*a) << endl;
+        cout << "The single repeated root is " << -b/(2.0*a) << endl; 
     }
     else if (discriminant > 0){
-        cout << "two real roots." << endl;
-        cout << "x1 = " << (-b + pow(discriminant, 1.0/2.0))/(2.0*a) << 
-        endl << "x2 = " << (-b-pow(discriminant,1.0/2.0))/(2.0*a) <<endl;
+        cout << "Two real roots." << endl;
+        cout << "First root " << (-b + pow(discriminant, 1.0/2.0))/(2.0*a) << endl;
+        cout << "Second root " << (-b-pow(discriminant,1.0/2.0))/(2.0*a) <<endl;
     }
     else if (discriminant < 0)
-        cout << "two complex roots." << endl;
+        cout << "Complex roots" << endl;
     return 0;
 }
