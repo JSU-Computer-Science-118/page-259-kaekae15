@@ -19,7 +19,7 @@ int main(){
     else if (discriminant < 0);{
         cout << "Complex roots" << endl;
     }
-    else (discriminant==0);{
+    else if (discriminant==0);{
         cout << "The single repeated root is " << -b/(2.0*a) << endl; 
     }
     return 0;
