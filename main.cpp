@@ -11,18 +11,28 @@ int main(){
     double a,b,c,discriminant;
     discriminant = pow(b,2.0)-4*a*c;
   
-    if (discriminant > 0){
-        cout << "Two real roots" << endl;
-        cout << "- First root " << (-b + pow(discriminant, 1.0/2.0))/(2.0*a) << endl;
-        cout << "- Second root " << (-b-pow(discriminant,1.0/2.0))/(2.0*a) <<endl;
-    }
-   
-    if (discriminant < 0){
-        cout << "Complex roots" << endl;
-    }
-   
+    // cout << "enter a: "; 
+    // cin >> a;
+
+    // cout << "enter b: ";
+    // cin >> b;
+
+    // cout << "enter c: ";
+    // cin >> c;
+
+    cout << "Input: ";
+    cin >> a >> b >> c; 
+
+// Output: The single root is -1
     if (discriminant==0){
-        cout << "The single repeated root is " << -b/(2.0*a) << endl; 
+        cout << "Output: The single root is " << -b/(2.0*a) << endl; 
     }
+    else if (discriminant > 0){  // Ouput: Two real roots \n- First root 0\n- Second root -1
+        cout << "Output: Two real roots" << endl;
+        cout << "- First root " << (-b + pow(discriminant, 1.0/2.0))/(2.0*a) << endl 
+             << "- Second root " << (-b - pow(discriminant,1.0/2.0))/(2.0*a) <<endl;
+    }
+    else if (discriminant < 0) // Output: Complex roots
+        cout << "Output: Complex roots" << endl;
     return 0;
 }
