@@ -24,7 +24,7 @@ int main(){
         cout << "Complex roots" << endl;
     }
     else {
-        cout << "Invalid entry "
+        cout << "Invalid entry";
         }
     return 0;
 }
