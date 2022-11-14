@@ -9,18 +9,9 @@ using namespace std;
 
 int main(){
     double a,b,c,discriminant;
+    cin >> a >> b >> c;
     discriminant = pow(b,2.0)-4*a*c;
-  
-    // cout << "enter a: "; 
-    // cin >> a;
 
-    // cout << "enter b: ";
-    // cin >> b;
-
-    // cout << "enter c: ";
-    // cin >> c;
-
-// Output: The single root is -1
     if (discriminant==0){
         cout << "The single root is " << -b/(2.0*a) << endl; 
     }
