@@ -17,8 +17,8 @@ int main(){
     }
     else if (discriminant > 0){  // Ouput: Two real roots \n- First root 0\n- Second root -1
         cout << "Two real roots" << endl;
-        cout << "- First root " << (-b + pow(discriminant, 1.0/2.0))/(2.0*a) << endl 
-             << "- Second root " << (-b - pow(discriminant,1.0/2.0))/(2.0*a) <<endl;
+        cout << "- First root " << (-b + sqrt(discriminant)/(2.0*a)) << endl ;
+             << "- Second root " << (-b - sqrt(discriminant)/(2.0*a)) <<endl;
     }
     else if (discriminant < 0) // Output: Complex roots
         cout << "Complex roots" << endl;
