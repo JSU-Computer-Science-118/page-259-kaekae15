@@ -20,19 +20,16 @@ int main(){
     // cout << "enter c: ";
     // cin >> c;
 
-    cout << "Input: ";
-    cin >> a >> b >> c; 
-
 // Output: The single root is -1
     if (discriminant==0){
-        cout << "Output: The single root is " << -b/(2.0*a) << endl; 
+        cout << "The single root is " << -b/(2.0*a) << endl; 
     }
     else if (discriminant > 0){  // Ouput: Two real roots \n- First root 0\n- Second root -1
-        cout << "Output: Two real roots" << endl;
+        cout << "Two real roots" << endl;
         cout << "- First root " << (-b + pow(discriminant, 1.0/2.0))/(2.0*a) << endl 
              << "- Second root " << (-b - pow(discriminant,1.0/2.0))/(2.0*a) <<endl;
     }
     else if (discriminant < 0) // Output: Complex roots
-        cout << "Output: Complex roots" << endl;
+        cout << "Complex roots" << endl;
     return 0;
 }
